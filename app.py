@@ -11,6 +11,11 @@ df = pd.read_csv("https://raw.githubusercontent.com/inefable12/numpy_where/refs/
 st.write(df)
 
 st.write("Convirtiendo SI en 1 y NO en 0")
+st.write("""
+            El comando que usamos en python es:
+            df["Caract2"] = np.where(df["Caract2"] == "SI", 1, 0)
+            """
+        )
 df["Caract2"] = np.where(df["Caract2"] == "SI", 1, 0)
 
 st.write(df)
